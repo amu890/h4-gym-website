@@ -1,0 +1,128 @@
+/* ==========================================================================
+   LIVELY.CSS - Dynamic Animations & Interactions
+   ========================================================================== */
+
+/* --- 1. Global Hover Enhancements --- */
+a, button, .btn {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px var(--primary, #FBB70C);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+/* --- 2. Floating Animation --- */
+@keyframes lively-float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: lively-float 6s ease-in-out infinite;
+}
+
+/* --- 3. Card & Image Hover Effects --- */
+.gallery-item, .trainer-card, .stat-card, .service-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gallery-item:hover, .trainer-card:hover, .stat-card:hover, .service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.gallery-item img, .trainer-image img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-item:hover img, .trainer-card:hover img {
+    transform: scale(1.1);
+}
+
+/* --- 4. Glow Pulse Animation --- */
+@keyframes lively-pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(251, 183, 12, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(251, 183, 12, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(251, 183, 12, 0); }
+}
+
+.animate-pulse {
+    animation: lively-pulse-glow 2s infinite;
+}
+
+/* --- 5. Gradient Text Animation --- */
+@keyframes lively-gradient-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.lively-text {
+    background: linear-gradient(270deg, var(--primary), var(--royal-brown), var(--primary));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: lively-gradient-text 4s ease infinite;
+}
+
+/* --- 6. Entrance Animations --- */
+@keyframes lively-fade-in-up {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-entrance {
+    animation: lively-fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Staggered Delays */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* --- 7. Navbar Link Underline Interaction --- */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary, #FBB70C);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/* --- 8. Section Background Parallax/Gradient --- */
+@keyframes lively-bg-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.lively-bg {
+    background: linear-gradient(-45deg, #0c0e12, #1a1c23, #0c0e12, #2d1316);
+    background-size: 400% 400%;
+    animation: lively-bg-shift 15s ease infinite;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

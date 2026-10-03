@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="H4 Gym - Unleash your potential with elite training, modern equipment, certified trainers, and dynamic fitness programs.">
+    <title>H4 Gym | Build Your Legacy</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="lively.css">
+</head>
+<body>
+
+    <!-- ==============================================
+         1. NAVBAR
+         ============================================== -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="logo.png" alt="H4 Gym Logo" class="logo-img">
+                    <span class="logo-text">GYM</span>
+                </a>
+
+                <!-- Mobile menu toggle checkbox (Pure CSS) -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars open-icon"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="facility.html" class="nav-link">Facility</a></li>
+                        <li class="nav-item"><a href="trainers.html" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
+                        <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                        <li class="nav-item"><a href="why-us.html" class="nav-link">Why Choose Us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <!-- Theme Toggle Button (Pure CSS Dark/Light Mode) -->
+                        <div class="theme-toggle-wrapper">
+                            <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-label="Toggle theme">
+                            <label for="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                                <i class="fa-solid fa-moon moon-icon"></i>
+                                <i class="fa-solid fa-sun sun-icon"></i>
+                            </label>
+                        </div>
+                        <a href="membership.html" class="btn btn-primary nav-cta">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section page-header" style="min-height: 40vh; display: flex; align-items: center; justify-content: center;">
+            <div class="hero-overlay"></div>
+            <div class="hero-container text-center" style="position: relative; z-index: 2;">
+                <h1 class="hero-title">Member <span class="highlight">Reviews</span></h1>
+                <p class="hero-subtitle">Real Results &amp; Verified Journeys from our members.</p>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="google-reviews-summary-card">
+                    <div class="summary-content">
+                        <div class="google-icon-wrapper">
+                            <svg class="google-svg-logo" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+                                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                            </svg>
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-rating-row">
+                                <span class="rating-number">4.8</span>
+                                <span class="rating-scale">/ 5.0</span>
+                                <div class="summary-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <h3 class="summary-headline">Google Reviews Summary</h3>
+                            <p class="summary-subtext"><i class="fa-solid fa-circle-check"></i> Based on 160+ authentic member reviews</p>
+                        </div>
+                    </div>
+                    <div class="summary-proof-container">
+                        <div class="summary-proof-card">
+                            <img src="images/screenshot_summary.png" alt="Google review summary" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-media-container">
+                            <div class="media-viewport active" data-view="photo">
+                                <img src="images/h410.webp" alt="Member Transformation">
+                            </div>
+                            <div class="media-viewport" data-view="review" style="margin-top: 10px;">
+                                <img src="images/h410_1.png" alt="Google Review">
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="member-info">
+                                <h3 class="member-name">kumaraguru K</h3>
+                                <span class="member-duration">3 months ago</span>
+                            </div>
+                            <p class="review-text">"90-Day Transformation Journey 🔥 Ninety days ago, I started this journey at 92 kg with a goal to become healthier, stronger, and more confident... Today, I am proud to say that I have reached 80 kg, losing 12 kg in just 90 days. This transformation is not just about the weight I lost—it's about the discipline I gained, the habits I built, and the confidence I discovered along the way. A special thanks to my coach, Praveen..."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-media-container">
+                            <div class="media-viewport active" data-view="photo">
+                                <img src="images/h411.webp" alt="Member Transformation">
+                            </div>
+                            <div class="media-viewport" data-view="review" style="margin-top: 10px;">
+                                <img src="images/h411_1.png" alt="Google Review">
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="member-info">
+                                <h3 class="member-name">Data Engineering</h3>
+                                <span class="member-duration">3 months ago</span>
+                            </div>
+                            <p class="review-text">"88 kg to 77 kg... what a journey! 💪 A huge thank you to my trainer, Praveen, for the constant motivation, personalized guidance, and for pushing me beyond the limits I had set for myself... Also, heartfelt thanks to H4 Fitness for providing an amazing environment to train consistently."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-media-container">
+                            <div class="media-viewport active" data-view="photo">
+                                <img src="images/h412.webp" alt="Member Transformation">
+                            </div>
+                            <div class="media-viewport" data-view="review" style="margin-top: 10px;">
+                                <img src="images/h412_1.png" alt="Google Review">
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="member-info">
+                                <h3 class="member-name">Aarthy Shammy</h3>
+                                <span class="member-duration">a month ago</span>
+                            </div>
+                            <p class="review-text">"Transforming My Health & Family Lifestyle with Coach Hariharan! 🔥💪 I am beyond happy with my results under Coach Hariharan! In just 3 months, I successfully lost 9 kg. His personalized workout plans, professionalism, and constant encouragement kept me disciplined and focused every step of the way. Beyond my own 9 kg weight loss... Coach Hari has transformed our entire household's health culture."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-media-container">
+                            <div class="media-viewport active" data-view="photo">
+                                <img src="images/h413.webp" alt="Member Transformation">
+                            </div>
+                            <div class="media-viewport" data-view="review" style="margin-top: 10px;">
+                                <img src="images/h413_1.png" alt="Google Review">
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="member-info">
+                                <h3 class="member-name">Vinayagam Murthy</h3>
+                                <span class="member-duration">a month ago</span>
+                            </div>
+                            <p class="review-text">"105 KG to 90 KG – An Amazing Weight Loss Journey at H4 Fitness Studio 💪🔥 I'm very happy to share my experience with H4 Fitness Studio... A special thanks to Coach Mahesh Bro for his continuous guidance, motivation, and support throughout my journey. With his guidance, I was able to reduce my weight from 105 kg to 90 kg, which is a huge achievement for me."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- ==============================================
+         FOOTER
+         ============================================== -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- ── ROW 1: 4-Column Grid (Brand | Quick Links | Programs | Newsletter) -->
+            <div class="footer-main-row">
+
+                <!-- Col 1: Brand & Social -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="H4 Gym Logo" class="logo-img">
+                        <span class="logo-text">GYM</span>
+                    </a>
+                    <p class="footer-desc">
+                        A powerhouse fitness community dedicated to unlocking physical excellence through heart, hustle, health, and habits.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About H4</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="trainers.html">Certified Trainers</a></li>
+                        <li><a href="membership.html">Membership Plans</a></li>
+                        <li><a href="reviews.html">Transformations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Programs -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Bodybuilding &amp; Hypertrophy</a></li>
+                        <li><a href="services.html">High-Intensity Interval Training</a></li>
+                        <li><a href="services.html">Combat &amp; Boxing Drills</a></li>
+                        <li><a href="services.html">Cardio &amp; Mobility Recovery</a></li>
+                        <li><a href="services.html">Custom Nutrition Blueprints</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Stay Updated (Newsletter) -->
+                <div class="footer-col footer-newsletter-col">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p class="footer-newsletter-text">Subscribe for workout tips, nutrition updates, and exclusive member discounts.</p>
+                    <form class="footer-newsletter-form" id="newsletterForm" aria-label="Newsletter Subscription">
+                        <div class="newsletter-input-group">
+                            <input type="email" placeholder="Your email address" aria-label="Your email address" required>
+                            <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div><!-- /footer-main-row -->
+
+            <!-- ── ROW 2: Copyright Bottom Strip ───────────────────────── -->
+            <div class="footer-bottom-strip">
+                <p class="footer-copyright">&copy; 2026 H4 Gym. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="legal-divider">•</span>
+                    <a href="#">Terms of Service</a>
+                    <span class="legal-divider">•</span>
+                    <a href="#">Security</a>
+                </div>
+            </div><!-- /footer-bottom-strip -->
+
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="gallery-lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" src="" alt="Enlarged gallery image">
+            <div class="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

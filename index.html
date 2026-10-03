@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="H4 Gym - Unleash your potential with elite training, modern equipment, certified trainers, and dynamic fitness programs.">
+    <title>H4 Gym | Build Your Legacy</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="lively.css">
+</head>
+<body>
+
+    <!-- ==============================================
+         1. NAVBAR
+         ============================================== -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="logo.png" alt="H4 Gym Logo" class="logo-img">
+                    <span class="logo-text">GYM</span>
+                </a>
+
+                <!-- Mobile menu toggle checkbox (Pure CSS) -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars open-icon"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="facility.html" class="nav-link">Facility</a></li>
+                        <li class="nav-item"><a href="trainers.html" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
+                        <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                        <li class="nav-item"><a href="why-us.html" class="nav-link">Why Choose Us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <!-- Theme Toggle Button (Pure CSS Dark/Light Mode) -->
+                        <div class="theme-toggle-wrapper">
+                            <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-label="Toggle theme">
+                            <label for="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                                <i class="fa-solid fa-moon moon-icon"></i>
+                                <i class="fa-solid fa-sun sun-icon"></i>
+                            </label>
+                        </div>
+                        <a href="membership.html" class="btn btn-primary nav-cta">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==============================================
+             2. HERO SECTION
+             ============================================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-fire"></i> No Excuses, Just Results</span>
+                    <h1 class="hero-title">Forge Strength. <br><span class="highlight">Unleash H4 Power.</span></h1>
+                    <p class="hero-subtitle">
+                        Transform your mind and body at H4 Gym. Access high-grade equipment, elite personal coaching, and an unstoppable fitness community.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="membership.html" class="btn btn-primary btn-large">Start Free Trial</a>
+                        <a href="services.html" class="btn btn-outline btn-large">Explore Programs</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">1,200+</span>
+                            <span class="stat-label">Active Members</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Certified Trainers</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Weekly Classes</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Facility Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==============================================
+             FAQ SECTION
+             ============================================== -->
+        <section class="faq-section scroll-reveal" id="faq">
+            <div class="faq-container">
+                <div class="faq-header">
+                    <div class="section-tag">Got Questions?</div>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What are your operating hours?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer">
+                                H4 Gym is accessible 24/7 for our members. Our staffed hours for inquiries and tours are Monday through Friday from 6:00 AM to 10:00 PM, and weekends from 8:00 AM to 8:00 PM.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you offer personal training?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer">
+                                Yes, we have over 25 certified personal trainers who specialize in everything from hypertrophy and bodybuilding to mobility and sports-specific conditioning. We offer customized plans to fit your individual goals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Is there a free trial available?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer">
+                                Absolutely. We offer a 7-day free trial so you can experience our high-grade equipment, join our group classes, and get a feel for our unstoppable fitness community before committing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can I cancel my membership at any time?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer">
+                                We offer flexible month-to-month plans with no long-term commitments, as well as discounted annual memberships. Month-to-month plans can be canceled with a 30-day notice.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==============================================
+         FOOTER
+         ============================================== -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- ── ROW 1: 4-Column Grid (Brand | Quick Links | Programs | Newsletter) -->
+            <div class="footer-main-row">
+
+                <!-- Col 1: Brand & Social -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="H4 Gym Logo" class="logo-img">
+                        <span class="logo-text">GYM</span>
+                    </a>
+                    <p class="footer-desc">
+                        A powerhouse fitness community dedicated to unlocking physical excellence through heart, hustle, health, and habits.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About H4</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="trainers.html">Certified Trainers</a></li>
+                        <li><a href="membership.html">Membership Plans</a></li>
+                        <li><a href="reviews.html">Transformations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Programs -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Bodybuilding &amp; Hypertrophy</a></li>
+                        <li><a href="services.html">High-Intensity Interval Training</a></li>
+                        <li><a href="services.html">Combat &amp; Boxing Drills</a></li>
+                        <li><a href="services.html">Cardio &amp; Mobility Recovery</a></li>
+                        <li><a href="services.html">Custom Nutrition Blueprints</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Stay Updated (Newsletter) -->
+                <div class="footer-col footer-newsletter-col">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p class="footer-newsletter-text">Subscribe for workout tips, nutrition updates, and exclusive member discounts.</p>
+                    <form class="footer-newsletter-form" id="newsletterForm" aria-label="Newsletter Subscription">
+                        <div class="newsletter-input-group">
+                            <input type="email" placeholder="Your email address" aria-label="Your email address" required>
+                            <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div><!-- /footer-main-row -->
+
+            <!-- ── ROW 2: Copyright Bottom Strip ───────────────────────── -->
+            <div class="footer-bottom-strip">
+                <p class="footer-copyright">&copy; 2026 H4 Gym. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="legal-divider">•</span>
+                    <a href="#">Terms of Service</a>
+                    <span class="legal-divider">•</span>
+                    <a href="#">Security</a>
+                </div>
+            </div><!-- /footer-bottom-strip -->
+
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="gallery-lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" src="" alt="Enlarged gallery image">
+            <div class="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
